@@ -12,6 +12,9 @@ function generateRegions(chart) {
       .data(args.regions.filter(regionInRange(args, leftBounds, rightBounds)))
       .enter()
       .append('rect')
+      .attr('class', function (d) {
+        return 'mg-region ' + (d.class || "default");
+      })
       .attr('x', xPositionFixed(args, 0))
       .attr('width', function (data) {
         return xPositionFixed(args, 1)(data) - xPositionFixed(args, 0)(data);
@@ -26,7 +29,9 @@ function generateRegions(chart) {
       .data(args.regions.filter(regionInRange(args, leftBounds, rightBounds)))
       .enter()
       .append('text')
-      .attr('class', 'mg-region-text')
+      .attr('class', function (d) {
+        return 'mg-region-text ' + (d.class || "default");
+      })
       .attr('x', function (data) {
         return xPosition(args, 0)(data) + ((xPosition(args, 1)(data) - xPosition(args, 0)(data)) / 2);
       })
