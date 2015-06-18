@@ -11,6 +11,10 @@
     "annotation",
     "region"
   ],
+  "main": [
+    "dist/mg-regions.js",
+    "dist/mg-regions.css"
+  ],
   "license": "MIT",
   "ignore": [
     ".DS_Store",
