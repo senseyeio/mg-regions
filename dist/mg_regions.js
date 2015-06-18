@@ -14,7 +14,7 @@ function generateRegions(chart) {
   if (args.regions) {
     var leftBounds = args.buffer + args.left;
     var rightBounds = args.width - args.buffer - args.right;
-    var gm = svg.append('g')
+    var gm = svg.insert('g', '.mg-rollover-rect')
       .attr('class', 'mg-regions');
 
     gm.selectAll('.mg-regions')
