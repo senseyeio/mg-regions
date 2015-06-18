@@ -8,7 +8,8 @@
   "keywords": [
     "metrics-graphics",
     "extension",
-    "annotations"
+    "annotation",
+    "region"
   ],
   "license": "MIT",
   "ignore": [
@@ -17,17 +18,18 @@
     ".gitignore",
     "dev",
     "gulp",
-    "gulpfile.js",
+    "Gulpfile.js",
     "index.js",
     "node_modules",
     "package.json",
     "src",
     "testem.json",
     "tests",
-    "README.md"
+    "README.md",
+    ".jshintrc",
+    ".travis.yml"
   ],
   "devDependencies": {
-    "metrics-graphics": "latest",
     "qunit": "~1.17.1",
     "font-awesome": "~4.3.0",
     "bootstrap": "~3.3.2",
@@ -35,6 +37,6 @@
     "jquery": "~2.1.3"
   },
   "dependencies": {
-    "jss": "*"
+    "metrics-graphics": ">=2.5.0"
   }
 }
