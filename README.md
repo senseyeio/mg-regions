@@ -2,13 +2,13 @@
 
 A metrics-graphics addon allowing region annotations for line charts.
 
-![example](https://raw.githubusercontent.com/dareid/mg-regions/master/dev/images/example.jpg "mg-regions example")
+![example](https://raw.githubusercontent.com/senseyeio/mg-regions/master/dev/images/example.jpg "mg-regions example")
 
 ### Usage
 
-Install using bower (not yet published):
+Install using bower:
 
-- `bower install senseye/mg-regions --save`
+- `bower install senseyeio/mg-regions --save`
 
 Include `dist/mg_regions.js` in your build, or include it in your HTML:
 
