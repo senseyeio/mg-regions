@@ -30,9 +30,9 @@ regions: [{
 
 ### Development
 
-- `gulp serve` to run a development version of the library to experiment with
+- `npm start` to run a development version of the library to experiment with
 
 ### Testing
 
 - `gulp test` to run the Test'em server in continuous mode.
-- `npm test` or `gulp test-ci` for a single run, CI mode.
+- `npm test` for a single run, CI mode.

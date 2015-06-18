@@ -5,13 +5,17 @@
   "authors": [
     "Dan Reid <dan@senseye.io>"
   ],
-  "description": "A metrics-graphics addon introducting region annotations",
+  "description": "A metrics-graphics addon introducing region annotations",
   "directories": {
     "test": "tests"
   },
   "scripts": {
+    "postinstall": "bower install",
+    "prebuild": "npm install",
     "build": "gulp build:js",
-    "test": "./node_modules/testem/testem.js ci testem.json"
+    "test": "./node_modules/testem/testem.js ci testem.json",
+    "prestart": "npm install",
+    "start": "gulp serve"
   },
   "license": "MIT",
   "devDependencies": {
@@ -26,6 +30,7 @@
     "gulp-sass": "^1.3.2",
     "gulp-testem": "0.0.1",
     "gulp-umd": "^0.1.3",
-    "gulp-util": "^3.0.3"
+    "gulp-util": "^3.0.3",
+    "bower": "latest"
   }
 }
