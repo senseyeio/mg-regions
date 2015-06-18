@@ -169,18 +169,20 @@
             editor,
             persisted,
             defaultCall = "//modify away!\n"+
+              "enteredData = JSON.parse($('.data textarea').val());\n"+
+              "enteredData = MG.convert.date(enteredData, 'date');\n"+
               "MG.data_graphic({\n"+
               "\ttitle: 'Region Annotation',\n"+
-              "\tdescription: 'UFO sightings with a region annotation.',\n"+
-              "\tdata: JSON.parse($('.data textarea').val()),\n"+
-              "\twidth: 300,\n"+
+              "\tdescription: 'Some values with a region annotation.',\n"+
+              "\tdata: enteredData,\n"+
+              "\twidth: 400,\n"+
               "\theight: 200,\n"+
               "\ttarget: '.result',\n"+
-              "\tx_accessor: 'year',\n"+
-              "\ty_accessor: 'sightings',\n"+
-	            "\tregions: [{'year': [1960, 1970], 'label': 'a test region'}]\n"+
+              "\tx_accessor: 'date',\n"+
+              "\ty_accessor: 'value',\n"+
+	            "\tregions: [{'date': [new Date('2013-10-25'), new Date('2013-12-25')], 'label': 'a test region'}]\n"+
             "});",
-            defaultData = ufoData;
+            defaultData = dummyData;
 
         persisted = JSON.parse(localStorage.getItem(mgKey), null, 2) || {
           data: defaultData
