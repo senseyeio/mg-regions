@@ -2,6 +2,8 @@
 
 A metrics-graphics addon allowing region annotations for line charts.
 
+![example](https://raw.githubusercontent.com/dareid/mg-regions/master/dev/images/example.jpg "mg-regions example")
+
 ### Usage
 
 Install using bower (not yet published):
@@ -21,9 +23,14 @@ Add regions to your line charts by specifing a regions argument in the chart opt
 ```js
 regions: [{
   date: [1994, 2004],
-  label: 'friends'
+  label: 'friends', //optional
+  class: 'css-class-to-apply' //optional
 }]
 ```
+
+### Development
+
+- `gulp serve` to run a development version of the library to experiment with
 
 ### Testing
 
