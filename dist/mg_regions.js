@@ -14,7 +14,7 @@ function generateRegions(chart) {
   if (args.regions) {
     var leftBounds = args.buffer + args.left;
     var rightBounds = args.width - args.buffer - args.right;
-    var gm = svg.insert('g', '.mg-rollover-rect')
+    var gm = svg.insert('g', ':first-child')
       .attr('class', 'mg-regions');
 
     gm.selectAll('.mg-regions')
@@ -132,5 +132,6 @@ function regionInRange(args, leftBounds, rightBounds) {
 }
 
 MG.add_hook('line.after_init', generateRegions);
+
 return ;
 }));
