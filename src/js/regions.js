@@ -40,8 +40,12 @@ function generateRegions(chart) {
       .text(function (d) {
         return d.label;
       });
-
-    preventHorizontalOverlap(gm.selectAll('.mg-region-text')[0], args);
+    
+    if(args.regions_overlap_fn === undefined) {
+      preventHorizontalOverlap(gm.selectAll('.mg-region-text')[0], args);
+    } else {
+      args.regions_overlap_fn(gm.selectAll('.mg-region-text')[0], args);
+    }
   }
 }
 

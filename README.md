@@ -28,6 +28,12 @@ regions: [{
 }]
 ```
 
+### Other Options
+
+The following optional options should be set against the root of the options object:
+
+ - `regions_overlap_fn` : if set, will replace the default function which handles horizontal overlap. The specified function should expect two arguments, the first being the region labels, the second being the options object
+
 ### Development
 
 - `npm start` to run a development version of the library to experiment with
