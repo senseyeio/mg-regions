@@ -1,4 +1,5 @@
-
+### 0.1.3
+ - Removed postinstall step from package.json
 ### 0.1.2
  - Added `regions_overlap_fn` option, allowing users to specify custom function to prevent horizontal overlap of labels
 ### 0.1.1
