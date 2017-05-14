@@ -10,7 +10,6 @@
     "test": "tests"
   },
   "scripts": {
-    "postinstall": "bower install",
     "prebuild": "npm install",
     "build": "gulp build:js",
     "test": "./node_modules/testem/testem.js ci testem.json",
